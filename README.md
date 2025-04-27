@@ -60,4 +60,4 @@ openssl ec -in private-key.pem -pubout -out public-key.pem
 
 ## Important Note
 
-Some functions like `x509.IsEncryptedPEMBlock()` and `x509.DecryptPEMBlock()` are technically deprecated in modern Go versions, but they're still commonly used when dealing with encrypted PEM blocks. For production systems, you might want to consider using a key management service or other more modern approaches.
+If you are use **ES256** with a private key adding a passphrase to protect your private key. Some functions like `x509.IsEncryptedPEMBlock()` and `x509.DecryptPEMBlock()` are technically deprecated in modern Go versions, but they're still commonly used when dealing with encrypted PEM blocks. For production systems, you might want to consider using a key management service or other more modern approaches.
